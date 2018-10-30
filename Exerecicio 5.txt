@@ -1,0 +1,26 @@
+5 – Responda as questões abaixo:
+
+a) What is Ajax in jQuery?
+é para fazer requisições assincronas, para economizar trafego de internet.
+
+b) What is $. each() function in jQuery?
+é um loop onde podemos passar uma função com seus parametros se for o caso.
+
+c) How does a FOR loop start?
+( ) for ( i <= 5; i++)
+(X) for i = 1 to 5
+( ) for (I = 0; I <= 5; i++)
+( ) for (i = 0; <= 5)
+
+
+d) Create an object that contains mark, model, color, year of manufacture using Javascript;
+	
+	var Carro = new Object();
+	
+	Car.Mark = "VW";
+	Car.Model = "Fusca";
+	Car.Color = "Branco";
+	Car.Year = "1974";
+	
+	alert("Modelo do Carro" + Car.Model);
+	

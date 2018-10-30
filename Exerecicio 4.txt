@@ -1,0 +1,34 @@
+// Banco de dados Academia para as duas resposta
+
+4 – Transcreva as instruções T-SQL abaixo para LINQ TO SQL:
+
+SELECT Nome,Idade,Sexo
+FROM Atletas
+WHERE YEAR(DataNascimento) = 1995
+	AND MONTH(DataNascimento) > 03
+
+	
+->	
+	Academia acad = new Academia(@"Academia.mdf");
+	var idQuery =
+	from atle in acad.atletas
+	where atle.DataNascimento(x => x.DataNascimento.Value.Year = 1995) 
+	select new { atle.DataNascimento(x => x.DataNascimento.Value.Month > 03) }
+	
+------------------------------------------------------------------------------------------------------
+
+SELECT Atletas.Nome,Atletas.Idade,Clube.NomeDoClube
+FROM Atletas
+Inner join Clubes
+On Atletas.codigo_codigo = Clubes.codigo_clube
+WHERE Atletas.Sexo = ‘F’ and Clubes.UF = ‘SP’
+
+
+-> 
+	Academia acad = new Academia(@"Academia.mdf");
+		IQueryable<Clubes> ClubesQuery =
+	from atle in acad.Atletas
+	join club in acad.Clubes on atle.codigo_codigo equals club.codigo_clube
+	where atle.sexo = 'F' 
+	select new { club.UF = 'SP' }
+	

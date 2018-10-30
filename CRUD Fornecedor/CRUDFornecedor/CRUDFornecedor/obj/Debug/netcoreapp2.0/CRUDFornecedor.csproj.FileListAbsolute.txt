@@ -1,0 +1,11 @@
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.csprojResolveAssemblyReference.cache
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.csproj.CoreCompileInputs.cache
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.AssemblyInfoInputs.cache
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.AssemblyInfo.cs
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\bin\Debug\netcoreapp2.0\CRUDFornecedor.deps.json
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\bin\Debug\netcoreapp2.0\CRUDFornecedor.runtimeconfig.json
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\bin\Debug\netcoreapp2.0\CRUDFornecedor.runtimeconfig.dev.json
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\bin\Debug\netcoreapp2.0\CRUDFornecedor.dll
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\bin\Debug\netcoreapp2.0\CRUDFornecedor.pdb
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.dll
+C:\Nilson Jr\TesteGoldNet\CRUD Fornecedor\CRUDFornecedor\CRUDFornecedor\obj\Debug\netcoreapp2.0\CRUDFornecedor.pdb

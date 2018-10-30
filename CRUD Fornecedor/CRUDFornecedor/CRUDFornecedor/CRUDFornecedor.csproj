@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Fornecedor\Create\" />
+    <Folder Include="Controllers\Fornecedor\Edit\" />
+    <Folder Include="Controllers\Fornecedor\Delete\" />
+    <Folder Include="Controllers\PedidoItem\Create\" />
+    <Folder Include="Controllers\PedidoItem\Delete\" />
+    <Folder Include="Controllers\PedidoItem\Edit\" />
+    <Folder Include="Controllers\Pedido\Create\" />
+    <Folder Include="Controllers\Pedido\Delete\" />
+    <Folder Include="Controllers\Pedido\Edit\" />
+  </ItemGroup>
+
+</Project>

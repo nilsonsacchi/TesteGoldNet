@@ -1,0 +1,32 @@
+3 – Transcreva com suas palavras as instruções SQL abaixo:
+
+a) UPDATE C SET dataCancelamento = DATEADD(MONTH,1,GETDATE())
+FROM contratos C
+INNER JOIN Fornecedores F
+ON F.id_fornecedor = C.id_fornecedor
+WHERE EXISTS (SELECT 0 FROM pedidos p WHERE p.id_fornecedor = C.id_fornecedor
+AND P.dataParaEntrega < GETDATE() AND P.dataEntrega IS NULL)
+
+-> Fazer uma atualização na tabela de contratos, no campo dataCancelamento, com o segunte conteudo: 
+	data atual + um mes
+-> Condições para executar:
+	Deve existir um pedido com um respectivo fornecedor vinculado ao contrato.
+	O pedido deve estar com a dataParaEntrega menor que a data atual e a dataEntrega deve estar nula.
+	
+b) SELECT *
+FROM Pedidos P
+INNER JOIN Itens I
+LEFT OUTER JOIN Estoque E
+ON E.id_Item = I.id_item
+ON I.id_pedido = P.id_pedido
+WHERE E.id_item IS NULL
+
+-> Trazer todos os pedidos e itens mesmo que não exista na tabela de estoque. 
+
+c) DELETE FROM Atletas
+WHERE NOT EXISTS (SELECT 0 FROM AtletasCampeonatos
+WHERE Atletas.Codigo_Atleta = AtletasCampeonatos.Codigo_Atleta)
+OR Atletas.Codigo_Clube IS NULL
+
+-> Apagar os registros da tabela Atletas onde não existe o atleta na tabela de AtletasCampeonatos ou na 
+tabela de Atletas não existe clube.

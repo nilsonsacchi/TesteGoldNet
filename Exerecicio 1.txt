@@ -1,0 +1,61 @@
+Optei por pseudocódigo para ser mais rapido. O scritp de banco de dados adotado foi o T-SQL
+
+// Leia-se: Tabela foi feita específica para o teste, para inserção de somente um ciclo de prova do teste solicitado.
+	Tabela prova
+		nota numeric(10,2);
+		genero char(1); // 'M' Masculino / 'F' Feminino
+
+funcao mediaSala;
+	{
+		return: SELECT AVG(nota) FROM prova;
+	}
+
+funcao mediaSalaMasculino;
+	{
+		return: SELECT AVG(nota) FROM prova WHERE genero IN ('M');
+	}
+
+funcao mediaSalaFeminino;
+	{
+		return: SELECT AVG(nota) FROM prova WHERE genero IN ('F');
+	}
+
+funcao qtdMasculinoNota10;
+	{
+		return: SELECT COUNT(*) FROM prova WHERE nota = 10 AND genero IN ('M') ;
+	}
+	
+funcao qtdFemininoNota10;
+	{
+		return: SELECT COUNT(*) FROM prova WHERE nota = 10 AND genero IN ('F') ;
+	}
+	
+Qual a média de nota da sala;
+	mostra mediaNotaSala
+	{
+		chamada mediaSala;		
+	}
+	
+Qual a média dos alunos do sexo masculino;	
+	mostra mediaAlunoMasculino
+	{
+		chamada mediaSalaMasculino;
+	}
+
+Qual a média dos alunos do sexo feminino;
+	mostra mediaAlunoFeminino
+	{
+		chamada mediaSalaFeminino;
+	}
+
+Quantos alunos do sexo masculino tiveram nota 10;
+	mostra alunoMasculinoNota10
+	{
+		chamada qtdMasculinoNota10;
+	}
+
+Quantos alunos do sexo feminino tiveram nota 10;
+	mostra alunoFemininoNota10
+	{
+		chamada qtdFemininoNota10;
+	}
